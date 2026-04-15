@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>91 Club Login & Register Guide | App Access, Invite Code, Help & FAQs</title>
+  <meta name="description" content="91 Club par account banana, login karna, invite code samajhna aur mobile par access lena ho to yeh guide kaam aayegi. Seedhe steps, clear help aur 500rs bonus link ek hi page par.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://91club.tcgames.co.in/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="91 Club Login & Register Guide | App Access, Invite Code, Help & FAQs">
+  <meta property="og:description" content="91 Club homepage par register, login, invite code, mobile access aur common dikkat ki seedhi guide. 500rs bonus link ke saath easy start.">
+  <meta property="og:url" content="https://91club.tcgames.co.in/">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --surface: #ffffff;
+      --text: #182230;
+      --muted: #5e6a7d;
+      --line: #dfe7f1;
+      --primary: #0f6fff;
+      --primary-dark: #0a57cb;
+      --accent: #eef5ff;
+      --shadow: 0 12px 32px rgba(18, 38, 63, 0.08);
+      --radius: 18px;
+      --max: 1180px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.78;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { color: var(--primary-dark); }
+    .container { width: min(var(--max), calc(100% - 32px)); margin: 0 auto; }
+    .topbar {
+      background: rgba(255,255,255,0.9);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 72px;
+      flex-wrap: wrap;
+      padding: 10px 0;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--text);
+    }
+    .brand-badge {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #0f6fff, #6aa6ff);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      box-shadow: var(--shadow);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      padding: 0;
+      margin: 0;
+    }
+    nav a {
+      color: var(--muted);
+      font-size: 0.96rem;
+      font-weight: 600;
+    }
+    .hero { padding: 34px 0 26px; }
+    .breadcrumbs { font-size: 0.95rem; color: var(--muted); margin-bottom: 18px; }
+    .hero-card {
+      background: linear-gradient(180deg, #ffffff 0%, #f5f9ff 100%);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 38px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 26px;
+    }
+    h1, h2, h3 { line-height: 1.28; margin-top: 0; color: var(--text); }
+    h1 { font-size: clamp(2rem, 4vw, 3.2rem); margin-bottom: 16px; }
+    h2 { font-size: clamp(1.5rem, 2.6vw, 2.1rem); margin-bottom: 16px; }
+    h3 { font-size: 1.12rem; margin-bottom: 10px; }
+    p { margin: 0 0 18px; }
+    .lead { font-size: 1.08rem; color: #243347; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin: 24px 0 18px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 20px;
+      min-height: 52px;
+      border-radius: 14px;
+      font-weight: 700;
+      border: 1px solid transparent;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 12px 24px rgba(15, 111, 255, 0.15); }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-secondary { background: #fff; color: var(--primary); border-color: #b9d4ff; }
+    .hero-side {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 24px;
+      align-self: start;
+    }
+    .pill-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+    .pill {
+      background: var(--accent);
+      color: var(--primary-dark);
+      border: 1px solid #d7e7ff;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+    main section { padding: 30px 0; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+    .list-check, .steps, .simple-list {
+      margin: 0;
+      padding-left: 22px;
+    }
+    .list-check li, .steps li, .simple-list li { margin-bottom: 12px; }
+    .highlight {
+      border-left: 4px solid var(--primary);
+      background: #f7fbff;
+      padding: 18px;
+      border-radius: 0 14px 14px 0;
+      margin: 18px 0 24px;
+    }
+    .mini-note {
+      padding: 14px 16px;
+      border: 1px dashed #bfd5f9;
+      border-radius: 14px;
+      background: #fbfdff;
+      margin-top: 12px;
+    }
+    .faq-item { padding: 20px 0; border-bottom: 1px solid var(--line); }
+    .faq-item:last-child { border-bottom: none; }
+    footer {
+      margin-top: 40px;
+      background: #0f1723;
+      color: #dce5f0;
+      padding: 48px 0 30px;
+    }
+    footer h2, footer h3 { color: #fff; }
+    footer a { color: #dce5f0; }
+    footer a:hover { color: #ffffff; }
+    .footer-grid { display: grid; grid-template-columns: 1.2fr 0.9fr 1fr; gap: 26px; }
+    .warning-box {
+      margin-top: 18px;
+      padding: 16px 18px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(255,255,255,0.04);
+      border-radius: 14px;
+    }
+    .quick-links, .legal-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .quick-links li, .legal-links li { margin-bottom: 10px; }
+    .footer-note {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      font-size: 0.95rem;
+      color: #b7c4d4;
+      text-align: center;
+    }
+    @media (max-width: 980px) {
+      .hero-card, .grid-2, .grid-3, .footer-grid { grid-template-columns: 1fr; }
+      .hero-card { padding: 26px; }
+    }
+    @media (max-width: 640px) {
+      .container { width: min(var(--max), calc(100% - 20px)); }
+      .btn { width: 100%; }
+      .card, .hero-side { padding: 22px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "91 Club Guide",
+    "url": "https://91club.tcgames.co.in/",
+    "inLanguage": "hi",
+    "publisher": {
+      "@type": "Organization",
+      "name": "91 Club Guide"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "91 Club Login & Register Guide",
+    "url": "https://91club.tcgames.co.in/",
+    "description": "91 Club par register, login, invite code aur mobile access ko simple andaaz mein samjhane wali guide.",
+    "breadcrumb": { "@id": "https://91club.tcgames.co.in/#breadcrumb" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://91club.tcgames.co.in/#breadcrumb",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://91club.tcgames.co.in/" },
+      { "@type": "ListItem", "position": 2, "name": "91 Club Login & Register Guide", "item": "https://91club.tcgames.co.in/" }
+    ]
+  }
+  </script>
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"91 Club kya hai aur log isko kis kaam se dekhte hain?","acceptedAnswer":{"@type":"Answer","text":"91 Club ek color prediction platform hai jise log account access, quick rounds aur mobile par easy use ki wajah se dekhte hain. Naye users zyada tar register aur login process samajhne ke liye yahan aate hain."}},
+      {"@type":"Question","name":"91 Club par naya account kaise banega?","acceptedAnswer":{"@type":"Answer","text":"Page par diye gaye button se register page open karo, apna mobile number aur password bharo, invite code field ko dekh lo aur details submit kar do. Bas pehle details dhyan se check kar lena."}},
+      {"@type":"Question","name":"Invite code alag se dalna padta hai ya link mein hota hai?","acceptedAnswer":{"@type":"Answer","text":"Kai baar invite code register flow ke saath hi aa jata hai. Is page ke button link mein code pehle se laga hua hai, isliye process aur seedha ho jata hai."}},
+      {"@type":"Question","name":"Login karte waqt sabse common dikkat kya hoti hai?","acceptedAnswer":{"@type":"Answer","text":"Zyada tar dikkat galat number, galat password, weak internet ya purana browser hone ki wajah se aati hai. Pehle in basic cheezon ko check kar lo."}},
+      {"@type":"Question","name":"Mobile par 91 Club chalane ka sabse asaan tareeka kya hai?","acceptedAnswer":{"@type":"Answer","text":"Apne phone ke browser mein direct link kholna sabse seedha tareeka rehta hai. Stable internet aur updated browser ke saath page zyada theek chalta hai."}},
+      {"@type":"Question","name":"Get 500rs Bonus Now wale link ka fayda kya hai?","acceptedAnswer":{"@type":"Answer","text":"Is button se aap direct register flow par pahunchte ho jahan invite code pehle se add rehta hai. Isse naya user bina extra step ke start kar pata hai."}},
+      {"@type":"Question","name":"Agar password ya detail bhool jao to kya karna chahiye?","acceptedAnswer":{"@type":"Answer","text":"Sabse pehle recovery ya forgot password type option dekhna chahiye. Agar wahan se kaam na bane to help ya support section check kar sakte ho."}},
+      {"@type":"Question","name":"Kya ek hi device se login rakhna behtar hai?","acceptedAnswer":{"@type":"Answer","text":"Haan, ek hi device aur same browser use karne se confusion kam hota hai. Baar-baar alag device badalne se kabhi-kabhi login mismatch ho sakta hai."}},
+      {"@type":"Question","name":"Is page ko poora padhna zaroori hai ya seedha register kar sakte hain?","acceptedAnswer":{"@type":"Answer","text":"Dono cheezein theek hain. Agar aap process samajh chuke ho to seedha register kar sakte ho, aur agar pehli baar aaye ho to ek baar guide dekh lena kaafi kaam ka rehta hai."}},
+      {"@type":"Question","name":"Responsible play ka dhyan kyun rakhna chahiye?","acceptedAnswer":{"@type":"Answer","text":"Jab aadmi limit mein rehta hai to decision bhi theek rehte hain aur pressure bhi kam hota hai. Isi liye 18+ aur play responsibly wali warning ko lightly nahi lena chahiye."}}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top"><span class="brand-badge">91</span><span>91 Club Guide</span></a>
+      <nav>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#register-guide">Register</a></li>
+          <li><a href="#login-guide">Login</a></li>
+          <li><a href="#app-access">App Access</a></li>
+          <li><a href="#invite-code">Invite Code</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="#privacy-policy">Legal</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero" id="top">
+    <div class="container">
+      <div class="breadcrumbs"><a href="#top">Home</a> / <span>91 Club Login & Register Guide</span></div>
+      <div class="hero-card">
+        <div>
+          <h1>91 Club Login aur Register Kaise Kare – Complete Guide</h1>
+          <p class="lead">Agar tu 91 Club par pehli baar aaya hai aur seedha samajhna chahta hai ki account kaise banana hai, login kahan se karna hai, invite code ka scene kya hai aur mobile par kaise chalana hai, to yeh page usi ka seedha jawab hai. Faltu ghumaya nahi gaya. Jo kaam ki baat thi, wahi rakhi hai.</p>
+          <p>Kai log page kholte hi ulajh jaate hain. Koi sochta hai pehle register karun ya login, koi poochta hai bonus wala link alag hai kya, aur kisi ko lagta hai mobile par slow chalega. Isliye yahan saari basic cheezein ek line mein nahi, achhe se samjha kar likhi gayi hain. Padhoge to process easy lagega. Jaldi ho to button dabao aur seedha aage badh jao.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://tswgg.org/#/register?invitationCode=526655782645" target="_blank" rel="noopener noreferrer">Get 500rs Bonus Now</a>
+            <a class="btn btn-secondary" href="https://tswgg.org/#/register?invitationCode=526655782645" target="_blank" rel="noopener noreferrer">Instant Register</a>
+          </div>
+          <div class="pill-row">
+            <span class="pill">Login Guide</span>
+            <span class="pill">Register Steps</span>
+            <span class="pill">Invite Code</span>
+            <span class="pill">Mobile Access</span>
+          </div>
+        </div>
+        <aside class="hero-side">
+          <h2>Quick Start</h2>
+          <ul class="simple-list">
+            <li>Upar ke button se direct register page khul jayega</li>
+            <li>Pehli baar aaye ho to pehle overview aur register part dekh lo</li>
+            <li>Purana account hai to login wala section kaam aayega</li>
+            <li>Invite code aur bonus ki baat neeche alag se samjhai gayi hai</li>
+            <li>18+ only, aur control mein rehkar hi use karna sahi rehta hai</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section id="overview">
+      <div class="container grid-2">
+        <article class="card">
+          <h2>Yeh Guide Kis Kaam Ki Hai?</h2>
+          <p>Seedhi si baat hai. 91 Club ko log tab search karte hain jab unhe kuch na kuch clear karna hota hai. Kisi ko naya account banana hota hai. Kisi ka login nahi ho raha hota. Koi invite code ko leke doubt mein hota hai. Aur kaafi users ko sirf itna samajhna hota hai ki mobile par yeh cheez smooth chal jayegi ya nahi. Isi liye yeh homepage banaya gaya hai taaki basic cheezein idhar-udhar dhoondhni na padhein.</p>
+          <p>Is page mein language ko halka rakha gaya hai. Padhte waqt aisa feel ho ki koi seedha samjha raha hai, lecture nahi de raha. Har section ka apna kaam hai. Overview se samajh aata hai ki page mein milega kya. Register guide se step clear hote hain. Login part se common dikkat ka idea milta hai. Invite code section se bonus link wala scene clear hota hai. Aur FAQ mein chhote-chhote sawalon ke seedhe jawab mil jaate hain.</p>
+          <p>Kai homepages dikhne mein ache hote hain par kaam ke nahi hote. Bade title, 2 button aur bas khatam. User ko samajh hi nahi aata ki ab karna kya hai. Yahan woh problem nahi rakhi. Yahan page ko is tarah set kiya gaya hai ki chahe tu pehli baar aaya ho ya pehle se account use karta ho, dono halat mein kaam ki baat jaldi mil jaye.</p>
+          <p>Aur ek baat. Yeh page sirf action ke liye nahi, clarity ke liye bhi hai. Jab insaan ko pehle se flow samajh aa jata hai to beech mein ghabrahat kam hoti hai. Isi liye wording simple rakhi gayi hai, headings seedhi hain aur navigation bhi saaf rakha gaya hai.</p>
+        </article>
+        <article class="card">
+          <h2>Users Ko Sabse Pehle Kya Chahiye Hota Hai?</h2>
+          <p>Jo aadmi 91 Club ke naam se page par aata hai uske dimaag mein usually 3-4 sawal ghoom rahe hote hain. Account kaise banega. Login mein kya chahiye hoga. Invite code link mein laga hai ya alag bharna padega. Aur phone par chal jayega ya hang karega. Bas. Zyada tar case mein user ko isi level ki help chahiye hoti hai. Isliye homepage ko bhi isi hisaab se set kiya gaya hai.</p>
+          <p>Naye user ko seedha aur short raasta chahiye hota hai. Use ye nahi chahiye hota ki har line mein badi-badi baat likh di jaye. Usse sirf yeh samajhna hota hai ki pehla click kahan karna hai aur baad mein kya aayega. Yahan button direct diye gaye hain. Unke saath guide bhi di gayi hai. Jo jaldi mein hai woh direct aage badh sakta hai. Jo samajhkar chalna chahta hai woh do minute padh kar bhi aage ja sakta hai.</p>
+          <div class="highlight">
+            <p><strong>Asli kaam:</strong> page kholo, flow samjho, button use karo, aur agar beech mein kuch atke to neeche guide ya FAQ dekh lo. Is homepage ko isi tarah kaam ka rakha gaya hai.</p>
+          </div>
+          <p>Invite code ka scene bhi kaafi logon ko uljha deta hai. Isliye yahan register link aisa rakha gaya hai jahan code pehle se attached hai. Isse user ko alag se copy-paste nahi karna padta. Chhoti si baat hai, par experience easy ho jata hai. Isi tarah mobile access aur login issue wale points bhi seedhe example ke saath samjhaye gaye hain.</p>
+          <p>Overall idea simple hai: user aaye aur bina extra tension ke samajh le ki kya karna hai. Page ka kaam wahi hota hai. Aur yahan wahi rakha gaya hai.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="register-guide">
+      <div class="container card">
+        <h2>91 Club Register Guide</h2>
+        <p>Agar tu naya account banana chahta hai to register process zyada lamba nahi hai. Par haan, jaldi mein galti ho jaati hai. Isliye step simple hai, lekin dhyan se karna better rehta hai. Sabse pehle upar ya neeche diye gaye button par click karo. Link seedha register flow par le jayega. Wahan open hote hi jo fields aayengi unhe ek baar aaram se dekh lo. Aksar mobile number, password aur kabhi invite code wali detail dikhti hai.</p>
+        <p>Yahin par log sabse zyada hasty ho jaate hain. Number ek digit galat chala gaya, password kuch aur type ho gaya, aur baad mein login ke time lagta hai system problem hai. Asal mein dikkat pehle step mein hi ho chuki hoti hai. Isi liye register karte waqt ek chhota sa pause lena kaafi kaam ka rehta hai. Active number dalo. Password aisa rakho jo yaad bhi rahe aur bahut halka bhi na ho.</p>
+        <p>Agar link ke through invite code already attached hai to process aur easy ho jata hai. Phir bhi register page par ek baar dekh lena chahiye ki details theek se aa rahi hain ya nahi. Har chhoti cheez ko overthink karne ki zarurat nahi, par bina dekhe submit karna bhi sahi nahi. Do second ka check baad ki dikkat bacha deta hai.</p>
+        <p>Kuch users sochte hain ki register bas form bharne ka naam hai. Par asli cheez hai sahi detail bharna. Jab tu shuru se clean entry karta hai to baad mein login, account access aur basic use sab smooth rehte hain. Isi liye yeh section sirf “click karo aur ho gaya” wali line tak simataya nahi gaya. Pura flow seedha likha gaya hai.</p>
+        <ol class="steps">
+          <li>Page par diye gaye register button par click karo</li>
+          <li>Open hue flow mein apna active mobile number dalo</li>
+          <li>Password dhyan se banao aur type karte waqt check kar lo</li>
+          <li>Agar invite code field dikhe to usse verify kar lo</li>
+          <li>Submit karne se pehle ek baar poori detail dekh lo</li>
+          <li>Process complete hone ke baad same details yaad rakho</li>
+        </ol>
+        <p>Ek chhoti si aadat kaafi help karti hai: register karne ke baad bas yeh yaad rakho ki kaun sa number use kiya tha aur password kis style mein set kiya tha. Har baar screenshot lena ya random jagah note karna bhi safe nahi hota. Jo cheez yaad reh sake, wohi rakho. Simple aur saaf.</p>
+        <div class="mini-note">Tip: register ke time bas do cheezon par focus rakho — sahi mobile number aur sahi password. Zyada jaldi dikhane se hi aksar uljhan shuru hoti hai.</div>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://tswgg.org/#/register?invitationCode=526655782645" target="_blank" rel="noopener noreferrer">Get 500rs Bonus Now</a>
+          <a class="btn btn-secondary" href="https://tswgg.org/#/register?invitationCode=526655782645" target="_blank" rel="noopener noreferrer">Instant Register</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="login-guide">
+      <div class="container grid-2">
+        <article class="card">
+          <h2>91 Club Login Guide</h2>
+          <p>Jab account ban jata hai to agla kaam login ka hota hai. Yahan bhi process simple hai, par dikkat wahi purani wali hoti hai — ya to password yaad nahi rehta, ya number galat bhar diya jata hai, ya phone ka net theek nahi hota. Isliye login ko bhi aaram se karna chahiye. Registered number dalo, password sahi type karo aur page ko proper load hone do.</p>
+          <p>Ek aur kaam ka point yeh hai ki same device aur same browser use karna zyada easy lagta hai. Har baar alag jagah se login karoge to khud ko hi confusion hone lagta hai. Agar tu regular use ke liye ek hi phone rakhta hai to experience zyada stable feel hota hai. Yeh koi strict rule nahi, par kaafi logon ke liye helpful rehta hai.</p>
+          <ul class="list-check">
+            <li>Wahi number use karo jo register ke time dala tha</li>
+            <li>Password type karte waqt jaldi mat karo</li>
+            <li>Net weak ho to pehle usse stable karo</li>
+            <li>Browser purana ho to refresh ya update kar lo</li>
+          </ul>
+          <p>Login mein aadha kaam patience ka hota hai. Chhoti si dikkat aate hi baar-baar back-forward karna ya details change karna ulta aur issue bana deta hai. Pehle basic cheezein check kar lo. Zyada tar baar wahi kaafi hoti hain.</p>
+        </article>
+        <article class="card">
+          <h2>Login Mein Dikkat Aa Jaye To Kya Dekhna Chahiye?</h2>
+          <p>Sabse pehle yeh mat socho ki problem bahut badi hai. Aksar dikkat chhoti hi hoti hai. Number galat. Password mein ek character idhar-udhar. Net kabhi chal raha hai kabhi nahi. Ya phone mein bahut saari apps background mein chal rahi hoti hain. In cheezon se page slow ya stuck feel ho sakta hai.</p>
+          <p>Isliye pehla step simple rakho: mobile number check karo, password dobara aaram se dalo, page refresh karo aur net theek hai ya nahi dekh lo. Agar phir bhi issue feel ho raha hai to kuch second ruk kar dobara try karo. Kai baar user jaldi-jaldi itni attempts kar deta hai ki khud hi confuse ho jata hai.</p>
+          <p>Yeh section isi liye likha gaya hai taaki login ko leke unnecessary panic na ho. Basic cheezein samajh aa jayein to aadha kaam wahi khatam ho jata hai. Page par FAQ bhi isi reason se diya gaya hai taaki baar-baar alag jagah answer na dhoondhna pade.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="app-access">
+      <div class="container card">
+        <h2>Mobile Par 91 Club Kaise Access Karein</h2>
+        <p>Aaj kal zyada tar users phone se hi sab kaam karte hain. Isi liye mobile access ka clear hona zaroori hai. 91 Club ko browser ke through open karna seedha tareeka rehta hai. Link kholo, page load hone do aur jo action chahiye woh karo. Agar phone theek chal raha hai aur net stable hai to kaam smooth feel hota hai.</p>
+        <p>Jo log bolte hain ki page kabhi slow lagta hai, unke case mein kaafi baar problem platform se zyada device side par hoti hai. Background mein bahut apps chal rahi hoti hain, browser ka cache heavy hota hai, ya net on-off hota rehta hai. Isliye mobile par better experience ke liye simple sa setup rakho. Clean browser, stable connection aur same device.</p>
+        <p>Agar tu ek baar link use karke comfortable ho gaya hai to usse yaad rakhna ya bookmark karna useful lag sakta hai. Har baar search karke jaana bhi possible hai, par direct access zyada easy feel hota hai. Bas link verify karke hi use karo. Random jagah se aaye hue unclear links par details daalna theek nahi hota.</p>
+        <p>Mobile par kaam karte waqt screen chhoti hoti hai, isliye user ko aur bhi clear flow chahiye hota hai. Isi reason se yeh homepage sections mein divide hai. Tu upar se neeche tak dekh sakta hai aur jo cheez chahiye, usi section par jump kar sakta hai.</p>
+      </div>
+    </section>
+
+    <section id="invite-code">
+      <div class="container grid-2">
+        <article class="card">
+          <h2>Invite Code Ka Scene Kya Hai?</h2>
+          <p>Invite code ko lekar sabse common doubt yahi hota hai ki yeh alag se bharna padega ya button ke saath hi aa jayega. Is page par jo register link diya gaya hai usmein invitation code pehle se laga hua hai. Isse naya user bina copy-paste ke direct flow mein ja sakta hai. Chhoti si cheez hai, par kaafi aasani kar deti hai.</p>
+          <p>Phir bhi register page par ek baar dekh lena sahi rehta hai ki details theek aa rahi hain. Matlab yeh nahi ki har cheez ko leke tension lo, bas ek quick check kaafi hota hai. Isi tarah process clean rehta hai aur beech mein doubt kam aata hai.</p>
+        </article>
+        <article class="card">
+          <h2>Bonus Link Ko Kaise Samjhein?</h2>
+          <p>Get 500rs Bonus Now wala button direct register flow ke liye diya gaya hai. Iska matlab yeh hai ki naya user ek clear action ke saath aage badh sake. Bonus ka exact scene platform ke current rules par depend kar sakta hai, isliye register ke baad visible details ko dekh lena chahiye.</p>
+          <p>Yahan aim bas itna hai ki entry point easy ho. User ko alag page, alag code aur alag confusion mein na jaana pade. Isi liye hero aur neeche dono jagah same CTA diye gaye hain.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="tips">
+      <div class="container grid-3">
+        <div class="card">
+          <h2>Details Bharte Waqt</h2>
+          <p>Number aur password ko dhyan se bharna sabse badi smartness hai. Jaldi dikha ke submit kar dena baad mein login headache bana sakta hai.</p>
+        </div>
+        <div class="card">
+          <h2>Same Device Ka Fayda</h2>
+          <p>Ek hi phone aur same browser se kaam karoge to flow yaad rehta hai. Baar-baar device badalne se khud ko hi confusion ho sakta hai.</p>
+        </div>
+        <div class="card">
+          <h2>Control Mein Rehna</h2>
+          <p>Page use karna ho ya platform, dono mein calm rehna sahi rehta hai. Jaldi, pressure aur overreaction se usually kaam bigadta hi hai.</p>
+        </div>
+      </div>
+      <div class="container card" style="margin-top:20px;">
+        <h2>Thode Aur Kaam Ke Points</h2>
+        <p>Kai baar chhoti-chhoti aadatein hi bada farq kar deti hain. Jaise ki register ke baad details yaad rakhna, random links se bachna, aur issue aate hi panic na karna. Agar koi page load hone mein time le raha hai to turant yeh maan lena ki sab kharab hai, yeh sahi approach nahi. Pehle basic cheezein dekh lo.</p>
+        <p>Ek aur seedhi si baat. Har user ko poora homepage line by line padhne ki zarurat nahi. Par pehli baar aaye ho to ek baar sections dekh lena kaam ka rehta hai. Agli baar sirf wahi part kholo jo chahiye. Isi liye page ko long hote hue bhi boring nahi rakha gaya. Har hisse ka apna kaam hai.</p>
+        <p>Aur haan, responsibly use karna sirf footer mein likhne ki baat nahi. Jab aadmi apni limit samajh kar chalta hai to pressure kam rehta hai. Isi liye warning ko bhi lightly lene ki jagah seedha reminder samjho.</p>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container card">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3>1. 91 Club kya hai aur log isko kis kaam se dekhte hain?</h3>
+          <p>91 Club ek color prediction platform hai jise log account access, quick rounds aur mobile par easy use ki wajah se dekhte hain. Naye users zyada tar register aur login process samajhne ke liye yahan aate hain.</p>
+        </div>
+        <div class="faq-item">
+          <h3>2. 91 Club par naya account kaise banega?</h3>
+          <p>Page par diye gaye button se register page open karo, apna mobile number aur password bharo, invite code field ko dekh lo aur details submit kar do. Bas pehle details dhyan se check kar lena.</p>
+        </div>
+        <div class="faq-item">
+          <h3>3. Invite code alag se dalna padta hai ya link mein hota hai?</h3>
+          <p>Kai baar invite code register flow ke saath hi aa jata hai. Is page ke button link mein code pehle se laga hua hai, isliye process aur seedha ho jata hai.</p>
+        </div>
+        <div class="faq-item">
+          <h3>4. Login karte waqt sabse common dikkat kya hoti hai?</h3>
+          <p>Zyada tar dikkat galat number, galat password, weak internet ya purana browser hone ki wajah se aati hai. Pehle in basic cheezon ko check kar lo.</p>
+        </div>
+        <div class="faq-item">
+          <h3>5. Mobile par 91 Club chalane ka sabse asaan tareeka kya hai?</h3>
+          <p>Apne phone ke browser mein direct link kholna sabse seedha tareeka rehta hai. Stable internet aur updated browser ke saath page zyada theek chalta hai.</p>
+        </div>
+        <div class="faq-item">
+          <h3>6. Get 500rs Bonus Now wale link ka fayda kya hai?</h3>
+          <p>Is button se aap direct register flow par pahunchte ho jahan invite code pehle se add rehta hai. Isse naya user bina extra step ke start kar pata hai.</p>
+        </div>
+        <div class="faq-item">
+          <h3>7. Agar password ya detail bhool jao to kya karna chahiye?</h3>
+          <p>Sabse pehle recovery ya forgot password type option dekhna chahiye. Agar wahan se kaam na bane to help ya support section check kar sakte ho.</p>
+        </div>
+        <div class="faq-item">
+          <h3>8. Kya ek hi device se login rakhna behtar hai?</h3>
+          <p>Haan, ek hi device aur same browser use karne se confusion kam hota hai. Baar-baar alag device badalne se kabhi-kabhi login mismatch ho sakta hai.</p>
+        </div>
+        <div class="faq-item">
+          <h3>9. Is page ko poora padhna zaroori hai ya seedha register kar sakte hain?</h3>
+          <p>Dono cheezein theek hain. Agar aap process samajh chuke ho to seedha register kar sakte ho, aur agar pehli baar aaye ho to ek baar guide dekh lena kaafi kaam ka rehta hai.</p>
+        </div>
+        <div class="faq-item">
+          <h3>10. Responsible play ka dhyan kyun rakhna chahiye?</h3>
+          <p>Jab aadmi limit mein rehta hai to decision bhi theek rehte hain aur pressure bhi kam hota hai. Isi liye 18+ aur play responsibly wali warning ko lightly nahi lena chahiye.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-help">
+      <div class="container grid-2">
+        <article class="card">
+          <h2>Yeh Page Kaise Use Karna Hai</h2>
+          <p>Agar tu first-time visitor hai to hero se shuru kar. Wahan se direct button bhi mil jayega aur basic intro bhi. Uske baad overview aur register guide dekh le. Agar account pehle se bana hua hai to login section par aa ja. Agar invite code ya bonus ko leke doubt hai to uska alag section neeche diya hua hai. Matlab jo chahiye, seedha mil jaye — page ko isi hisaab se set kiya gaya hai.</p>
+          <p>Har baar alag search karne ki zarurat padti hai to user irritate hota hai. Isi liye is homepage ko reference page ki tarah use kiya ja sakta hai. Ek baar flow samajh aaya, phir agli baar sirf relevant part khol lo.</p>
+        </article>
+        <article class="card">
+          <h2>Quick Action</h2>
+          <p>Agar ab sab clear hai aur tu seedha aage badhna chahta hai, to neeche diye gaye dono buttons same register flow par le jayenge. Hero mein CTA isliye diya gaya tha taaki upar se hi action mil jaye, aur yahan dobara isliye diya gaya hai taaki page ke end tak aane ke baad wapas upar na jana pade.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://tswgg.org/#/register?invitationCode=526655782645" target="_blank" rel="noopener noreferrer">Get 500rs Bonus Now</a>
+            <a class="btn btn-secondary" href="https://tswgg.org/#/register?invitationCode=526655782645" target="_blank" rel="noopener noreferrer">Instant Register</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="privacy-policy">
+      <div class="container grid-2">
+        <article class="card">
+          <h2>Privacy Policy</h2>
+          <p>Yeh guide page users ko clear information dene ke liye banaya gaya hai. Is page par visible content general help ke roop mein rakha gaya hai. Jo bhi external flow aap buttons ke through open karte ho, wahan ki data handling aur process unke apne rules ke hisaab se chal sakti hai. Isi liye personal details bharte waqt hamesha dhyan rakhna chahiye.</p>
+          <p>Shared ya public device par account details fill karna avoid karna better rehta hai. Password ko casually save ya share karna theek nahi. Apni private information ko sirf wahi enter karo jahan tum khud sure ho ki link sahi hai aur process expected jagah par khul raha hai.</p>
+        </article>
+        <article class="card" id="terms-conditions">
+          <h2>Terms &amp; Conditions</h2>
+          <p>Is homepage ka role guidance dena hai. Register, login, invite code aur access flow ko simple andaaz mein samjhana hi iska main kaam hai. Bonus, eligibility, timing ya kisi bhi offer se related final conditions platform par dikhne wale current rules ke hisaab se badal sakti hain. Isliye action lene se pehle visible details ko dekh lena sahi rehta hai.</p>
+          <p>Page ke CTA buttons new tab mein open hote hain taaki current guide yahin bani rahe. Isse user chahe to register flow dekhte hue wapas guide par bhi aa sakta hai. Chhoti si cheez hai, par kaafi useful lagti hai.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="responsible-gaming">
+      <div class="container grid-2">
+        <article class="card">
+          <h2>Responsible Gaming</h2>
+          <p>Responsible play ka matlab sirf warning padh lena nahi hota. Iska matlab hota hai apne upar control rakhna. Jo kar rahe ho usse samajh kar karna. Agar kabhi lage ki jaldi, pressure ya overconfidence mein decision ho raha hai to wahi ruk jana better hota hai. Thoda sa break kai baar kaafi hota hai.</p>
+          <p>Isi liye 18+ wali line ko footer mein clearly rakha gaya hai. Yeh formality ke liye nahi hai. Yeh reminder hai ki har cheez ko limit ke saath use karna chahiye. Jitna handle kar sako, utne tak hi raho. Balance bana rahe to experience bhi halka rehta hai.</p>
+        </article>
+        <article class="card" id="disclaimer">
+          <h2>Disclaimer</h2>
+          <p>Yeh homepage ek guide format page hai. Iska focus users ko process samjhana, navigation easy banana aur common points ko clear karna hai. Final action hamesha user ke apne decision aur current platform details par depend karega. Isliye yahan di gayi information ko reference samjho aur actual flow mein visible details ko bhi dekhte chalo.</p>
+          <p>Agar time ke saath platform side par koi change aaye to current on-screen information ko priority deni chahiye. Guide ka kaam raasta clear karna hai, confusion kam karna hai, bas wahi yahan rakha gaya hai.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <section>
+        <h2>91 Club Guide</h2>
+        <p>Yeh page register, login, invite code aur mobile access ko seedhe andaaz mein samjhane ke liye banaya gaya hai. Design clean rakha gaya hai aur content aise likha gaya hai ki padhne mein natural lage.</p>
+        <div class="warning-box">
+          <p><strong>Important Warning:</strong> Yeh platform sirf 18+ users ke liye hai. Isse hamesha responsibly use karo. Sirf utna hi spend karo jitna tum aaram se handle kar sako. Agar kabhi lage ki control kam ho raha hai ya jaldi mein decision ho raha hai, to break lena zyada sahi rehta hai.</p>
+        </div>
+      </section>
+      <section>
+        <h3>Quick Links</h3>
+        <ul class="quick-links">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#register-guide">Register Guide</a></li>
+          <li><a href="#login-guide">Login Guide</a></li>
+          <li><a href="#app-access">App Access</a></li>
+          <li><a href="#invite-code">Invite Code</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="#privacy-policy">Privacy Policy</a></li>
+          <li><a href="#terms-conditions">Terms &amp; Conditions</a></li>
+          <li><a href="#responsible-gaming">Responsible Gaming</a></li>
+          <li><a href="#disclaimer">Disclaimer</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Legal</h3>
+        <ul class="legal-links">
+          <li><a href="#privacy-policy">Privacy Policy</a></li>
+          <li><a href="#terms-conditions">Terms &amp; Conditions</a></li>
+          <li><a href="#responsible-gaming">Responsible Gaming</a></li>
+          <li><a href="#disclaimer">Disclaimer</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="container">
+      <div class="footer-note">© 2026 91 Club Guide. 18+ Only | Play Responsibly | Stay Within Your Limits</div>
+    </div>
+  </footer>
+</body>
+</html>
