@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>91 Club App Access Guide | Mobile Open Kaise Kare, Smooth Use, Browser Tips &amp; FAQs</title>
+  <meta name="description" content="91 Club app ya mobile access guide. Browser par kaise kholein, phone me smooth use kaise rakhein, loading issue ho to kya karein aur common FAQs.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://91club.tcgames.co.in/app.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="91 Club App Access Guide | Mobile Open Kaise Kare, Smooth Use, Browser Tips &amp; FAQs">
+  <meta property="og:description" content="91 Club app ya mobile access guide. Browser par kaise kholein, phone me smooth use kaise rakhein, loading issue ho to kya karein aur common FAQs.">
+  <meta property="og:url" content="https://91club.tcgames.co.in/app.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+:root {
+  --bg: #f7f9fc;
+  --surface: #ffffff;
+  --text: #182230;
+  --muted: #5e6a7d;
+  --line: #dfe7f1;
+  --primary: #d62828;
+  --primary-dark: #a61e1e;
+  --accent: #fdecec;
+  --shadow: 0 12px 32px rgba(18, 38, 63, 0.08);
+  --radius: 18px;
+  --max: 1180px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.78;
+}
+a { color: var(--primary); text-decoration: none; }
+a:hover { color: var(--primary-dark); }
+.topbar a:hover, footer a:hover { color: #fff; opacity: 0.92; }
+.container { width: min(var(--max), calc(100% - 32px)); margin: 0 auto; }
+.topbar {
+  background: #c81d25;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.18);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 72px;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fff;
+}
+.brand-badge {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff4d4d, #c81d25);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  box-shadow: var(--shadow);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 0;
+  margin: 0;
+}
+nav a {
+  color: #fff;
+  font-size: 0.96rem;
+  font-weight: 600;
+}
+.hero { padding: 34px 0 26px; }
+.breadcrumbs { font-size: 0.95rem; color: var(--muted); margin-bottom: 18px; }
+.hero-card {
+  background: linear-gradient(180deg, #ffffff 0%, #fff6f6 100%);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  padding: 38px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 26px;
+}
+h1, h2, h3 { line-height: 1.28; margin-top: 0; color: var(--text); }
+h1 { font-size: clamp(2rem, 4vw, 3.2rem); margin-bottom: 16px; }
+h2 { font-size: clamp(1.5rem, 2.6vw, 2.1rem); margin-bottom: 16px; }
+h3 { font-size: 1.12rem; margin-bottom: 10px; }
+p { margin: 0 0 18px; }
+.lead { font-size: 1.08rem; color: #243347; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin: 24px 0 18px; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 20px;
+  min-height: 52px;
+  border-radius: 14px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn:hover { transform: translateY(-1px); box-shadow: 0 12px 24px rgba(200, 29, 37, 0.18); }
+.btn-primary { background: var(--primary); color: #fff; }
+.btn-secondary { background: #fff; color: var(--primary); border-color: #f0b6b6; }
+.hero-side {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 24px;
+  align-self: start;
+}
+.pill-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+.pill {
+  background: var(--accent);
+  color: var(--primary-dark);
+  border: 1px solid #f4c6c6;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+main section { padding: 30px 0; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px;
+}
+.list-check, .steps, .simple-list {
+  margin: 0;
+  padding-left: 22px;
+}
+.list-check li, .steps li, .simple-list li { margin-bottom: 12px; }
+.highlight {
+  border-left: 4px solid var(--primary);
+  background: #fff8f8;
+  padding: 18px;
+  border-radius: 0 14px 14px 0;
+  margin: 18px 0 24px;
+}
+.mini-note {
+  padding: 14px 16px;
+  border: 1px dashed #efb2b2;
+  border-radius: 14px;
+  background: #fff8f8;
+  margin-top: 12px;
+}
+.faq-item { padding: 20px 0; border-bottom: 1px solid var(--line); }
+.faq-item:last-child { border-bottom: none; }
+footer {
+  margin-top: 40px;
+  background: #c81d25;
+  color: #dce5f0;
+  padding: 48px 0 30px;
+}
+footer h2, footer h3 { color: #fff; }
+footer a { color: #dce5f0; }
+footer a:hover { color: #ffffff; }
+.footer-grid { display: grid; grid-template-columns: 1.2fr 0.9fr 1fr; gap: 26px; }
+.warning-box {
+  margin-top: 18px;
+  padding: 16px 18px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.08);
+  border-radius: 14px;
+}
+.quick-links, .legal-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.quick-links li, .legal-links li { margin-bottom: 10px; }
+.footer-note {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  font-size: 0.95rem;
+  color: #f4d7d7;
+  text-align: center;
+}
+@media (max-width: 980px) {
+  .hero-card, .grid-2, .grid-3, .footer-grid { grid-template-columns: 1fr; }
+  .hero-card { padding: 26px; }
+}
+@media (max-width: 640px) {
+  .container { width: min(var(--max), calc(100% - 20px)); }
+  .btn { width: 100%; }
+  .card, .hero-side { padding: 22px; }
+}
+</style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "91 Club Guide",
+  "url": "https://91club.tcgames.co.in/",
+  "inLanguage": "hi",
+  "publisher": {
+    "@type": "Organization",
+    "name": "91 Club Guide"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "91 Club App Access Guide – Mobile Par Sahi Tareeke Se Kholo",
+  "url": "https://91club.tcgames.co.in/app.html",
+  "description": "91 Club app ya mobile access guide. Browser par kaise kholein, phone me smooth use kaise rakhein, loading issue ho to kya karein aur common FAQs.",
+  "breadcrumb": {
+    "@id": "https://91club.tcgames.co.in/app.html#breadcrumb"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://91club.tcgames.co.in/app.html#breadcrumb",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://91club.tcgames.co.in/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "91 Club App Access Guide – Mobile Par Sahi Tareeke Se Kholo",
+      "item": "https://91club.tcgames.co.in/app.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "91 Club phone par kaise kholu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Trusted link ko mobile browser me kholo aur page ko poora load hone do. Fresh tab me kholna better rehta hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kya browser se use karna theek hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Haan, stable browser access kaafi useful rehta hai aur issues aane par refresh ya cache clear bhi easy hota hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Page half load ho raha hai, kya problem hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Network weak ho sakta hai ya browser ne page properly load nahi kiya. Refresh karke phir try karo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Blank screen aa rahi hai to pehla step kya hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "New tab me page kholo. Agar zarurat ho to cache clear karke dubara load karo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kya mobile data aur Wi-Fi me farq padta hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Haan, jo network stable ho us par page better chalega. Dono me se jo theek ho wahi use karo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Phone slow ho to access kaise improve karun?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Background apps band karo, extra tabs hatao aur browser fresh kholo. Kaafi farq padta hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kya home screen shortcut banana useful hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Haan, baar-baar search karne se better direct shortcut ya bookmark hota hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Public Wi-Fi par page kholna sahi hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Better yehi hai ki trusted network par hi account pages kholo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kya har baar browser update zaruri hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Update se layout aur performance issues kam hote hain, isliye updated browser better rehta hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "App access aur login guide alag kyun hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "App access phone aur browser use par focus karta hai, jabki login guide account kholne ki detail par."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html"><span class="brand-badge">91</span><span>91 Club Guide</span></a>
+      <nav><ul><li><a href="index.html">Home</a></li><li><a href="login.html">Login</a></li><li><a href="register.html">Register</a></li><li><a href="app.html">App Access</a></li><li><a href="invite-code.html">Invite Code</a></li><li><a href="faq.html">FAQs</a></li><li><a href="privacy-policy.html">Privacy</a></li><li><a href="terms-conditions.html">Terms</a></li></ul></nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="container">
+      <div class="breadcrumbs"><a href="index.html">Home</a> / <span>91 Club App Access Guide – Mobile Par Sahi Tareeke Se Kholo</span></div>
+      <div class="hero-card">
+        <div>
+          <h1>91 Club App Access Guide – Mobile Par Sahi Tareeke Se Kholo</h1>
+          <p class="lead">91 Club ko zyada log phone par hi kholte hain. Isi wajah se app access ya mobile access ka page sabse kaam ki jagah ban jata hai. Yahan tumhe yahi bataya gaya hai ki page ko phone par kaise kholna hai, smooth use kaise rakha jaye aur slow loading ya blank page jaise scene me kya karna chahiye.</p>
+          <p>Kai users ko lagta hai ki mobile par bas link kholna hi kaafi hai. Kaam chal jata hai, par jab page slow ho, browser atke ya button sahi na dikh rahe hon, tab confusion shuru hoti hai. Isliye yeh guide thoda detail me likhi gayi hai taaki mobile experience zyada seedha rahe.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://tswgg.org/#/register?invitationCode=526655782645" target="_blank" rel="noopener noreferrer">Login Now</a>
+            <a class="btn btn-secondary" href="https://tswgg.org/#/register?invitationCode=526655782645" target="_blank" rel="noopener noreferrer">Instant Register</a>
+          </div>
+          <div class="pill-row"><span class="pill">Mobile Access</span><span class="pill">Browser Tips</span><span class="pill">Smooth Use</span><span class="pill">Loading Help</span></div>
+        </div>
+        <aside class="hero-side">
+          <h2>Quick Start</h2>
+          <ul class="simple-list"><li>Phone par fresh tab me page kholna useful rehta hai</li><li>Updated browser ka farq padta hai</li><li>Slow loading ka matlab hamesha site issue nahi hota</li><li>Trusted link use karna better hota hai</li><li>Mobile access aur account safety saath-saath chalti hai</li></ul>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section id="section-1">
+      <div class="container card">
+        <h2>91 Club ko mobile par kholne ka seedha tareeka</h2>
+        <p>Sabse pehle phone par trusted link kholo. Page ko poora load hone do. Kai log half-loaded screen par hi click karna shuru kar dete hain aur phir bolte hain ki app ya page sahi nahi chal raha. Mobile par sabse pehla rule patience ka hai.</p><p>Browser ka choice bhi kaam karta hai. Updated Chrome ya similar stable browser par page zyada clean khulta hai. Purane browser ya random in-app browser me kabhi layout bigad jata hai. Isliye agar screen ajeeb lag rahi ho to wahi pehle check karo.</p><p>Page khulne ke baad agar tum regular use karna chahte ho to bookmark save kar lo. Baar-baar search se random result kholne ke bajay direct saved link better rehta hai. Chhoti aadat hai par kaam ki.</p>
+        
+      </div>
+    </section>
+<section id="section-2">
+      <div class="container card">
+        <h2>App access aur browser use me farq samjho</h2>
+        <p>Log aksar app aur browser access ko mix kar dete hain. Practical taur par kaam yahi hai ki tumhare paas ek stable route ho jisse page khule aur sahi chale. Browser access ka fayda ye hota hai ki link fresh open kar sakte ho aur update bhi turant mil jata hai.</p><p>Browser me open karne ka ek aur fayda ye hai ki tum easily refresh, cache clear ya new tab try kar sakte ho. Agar kuch atak raha hai to testing simple ho jati hai. Mobile access ka main funda convenience hai. Isliye jo route clean chale, usi ko pakdo.</p><p>Agar phone par bar-bar same page use karte ho to home screen shortcut banana bhi kaam aa sakta hai. Isse feel simple rehti hai aur baar-baar search karne ki zarurat nahi padti.</p>
+        <div class="cta-row">
+            <a class="btn btn-primary" href="https://tswgg.org/#/register?invitationCode=526655782645" target="_blank" rel="noopener noreferrer">Login Now</a>
+            <a class="btn btn-secondary" href="https://tswgg.org/#/register?invitationCode=526655782645" target="_blank" rel="noopener noreferrer">Instant Register</a>
+          </div>
+      </div>
+    </section>
+<section id="section-3">
+      <div class="container card">
+        <h2>Phone slow ho to kya karein</h2>
+        <p>Phone slow hone par log pehle page ko blame karte hain, par asal me dikkat device load ki bhi hoti hai. Background me bahut apps chal rahi ho, storage almost full ho ya network weak ho, to access slow lag sakta hai.</p><p>Fresh experience ke liye pehle background apps band karo. Browser ke purane extra tabs hatao. Phir page dubara kholo. Ye clean-up phone ke liye bhi achha hota hai aur login/register type pages par bhi asar dikhata hai.</p><p>Agar phir bhi page ruk-ruk ke khul raha hai to network badal ke dekho. Kabhi mobile data better hota hai, kabhi Wi-Fi. Ek hi line me itna yaad rakho: slow device aur weak network mil jayein to koi bhi page smooth nahi lagega.</p>
+        
+      </div>
+    </section>
+<section id="section-4">
+      <div class="container card">
+        <h2>Loading issue aur blank page ka scene</h2>
+        <p>Blank page ya incomplete layout dekh kar log soch lete hain ki site down hai. Kabhi hota hai, par bahut baar aisa browser cache ya adhoora load hone ki wajah se bhi hota hai. Sabse pehle refresh karo. Fir new tab me same page khol ke dekho.</p><p>Doosra step cache clear karna hota hai. Sabko pasand nahi hota, par jab page purani memory se load ho raha ho to ye kaam karta hai. Mobile browser me settings me jaake cache clean karke dubara kholna kaafi baar issue hata deta hai.</p><p>Third check network ka hai. Agar page elements adhe load ho rahe hain to net ka issue bhi ho sakta hai. Isliye blank page dekhte hi ghabrana nahi. Thoda basic testing karo, kaafi cases me solution mil jata hai.</p>
+        
+      </div>
+    </section>
+<section id="section-5">
+      <div class="container card">
+        <h2>Mobile par safe aur smooth use ka rhythm</h2>
+        <p>Mobile access ka matlab sirf page open karna nahi hota. Safe use bhi zaruri hota hai. Public Wi-Fi avoid karo. Random forwarded links se account open mat karo. Trusted saved page se hi kaam lo.</p><p>Apne phone me auto-save passwords aur shared browser history ka dhyan rakho, khaaskar agar device kisi aur ke saath share hota ho. Private account cheezein private hi rehni chahiye. Thoda dhyan rakhoge to baad ki tension bachti hai.</p><p>Smooth use ke liye itna bhi kaafi hai: stable browser, clean network, trusted link aur thoda patience. Isi combo se mobile experience achha lagta hai.</p>
+        <div class="cta-row">
+            <a class="btn btn-primary" href="https://tswgg.org/#/register?invitationCode=526655782645" target="_blank" rel="noopener noreferrer">Login Now</a>
+            <a class="btn btn-secondary" href="https://tswgg.org/#/register?invitationCode=526655782645" target="_blank" rel="noopener noreferrer">Instant Register</a>
+          </div>
+      </div>
+    </section>
+<section id="section-6">
+      <div class="container card">
+        <h2>Roz ke use ke liye chhoti kaam ki aadatein</h2>
+        <p>Bookmark bana lo ya home screen par shortcut save kar lo. Baar-baar search ya history me dhoondhne se time bhi lagta hai aur galat page khulne ka chance bhi rehta hai.</p><p>Login ke baad kaam khatam ho jaye to page bas waise hi khula na chhod do, khaaskar shared phone ho to. Apna basic account discipline rakho. Ye boring line lagti hai par practical me kaam wahi aati hai.</p><p>Phone ko updated rakho. Browser update aur device ki normal safai ka asar website use par seedha dikhta hai. Mobile access tab easy lagta hai jab phone khud overload me na ho.</p>
+        
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container card">
+        <h2>91 Club Frequently Asked Questions</h2>
+        <p>Is page ke neeche diye gaye sawal isi topic ke aas-paas ke rakhe gaye hain taaki tumhe idhar-udhar bhatakna na pade. Jawab seedhe hain aur wahi baat cover karte hain jo user ko actual me samajhni hoti hai.</p>
+        <div class="faq-item"><h3>1. 91 Club phone par kaise kholu?</h3><p>Trusted link ko mobile browser me kholo aur page ko poora load hone do. Fresh tab me kholna better rehta hai.</p></div>
+<div class="faq-item"><h3>2. Kya browser se use karna theek hai?</h3><p>Haan, stable browser access kaafi useful rehta hai aur issues aane par refresh ya cache clear bhi easy hota hai.</p></div>
+<div class="faq-item"><h3>3. Page half load ho raha hai, kya problem hai?</h3><p>Network weak ho sakta hai ya browser ne page properly load nahi kiya. Refresh karke phir try karo.</p></div>
+<div class="faq-item"><h3>4. Blank screen aa rahi hai to pehla step kya hai?</h3><p>New tab me page kholo. Agar zarurat ho to cache clear karke dubara load karo.</p></div>
+<div class="faq-item"><h3>5. Kya mobile data aur Wi-Fi me farq padta hai?</h3><p>Haan, jo network stable ho us par page better chalega. Dono me se jo theek ho wahi use karo.</p></div>
+<div class="faq-item"><h3>6. Phone slow ho to access kaise improve karun?</h3><p>Background apps band karo, extra tabs hatao aur browser fresh kholo. Kaafi farq padta hai.</p></div>
+<div class="faq-item"><h3>7. Kya home screen shortcut banana useful hai?</h3><p>Haan, baar-baar search karne se better direct shortcut ya bookmark hota hai.</p></div>
+<div class="faq-item"><h3>8. Public Wi-Fi par page kholna sahi hai?</h3><p>Better yehi hai ki trusted network par hi account pages kholo.</p></div>
+<div class="faq-item"><h3>9. Kya har baar browser update zaruri hai?</h3><p>Update se layout aur performance issues kam hote hain, isliye updated browser better rehta hai.</p></div>
+<div class="faq-item"><h3>10. App access aur login guide alag kyun hai?</h3><p>App access phone aur browser use par focus karta hai, jabki login guide account kholne ki detail par.</p></div>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://tswgg.org/#/register?invitationCode=526655782645" target="_blank" rel="noopener noreferrer">Login Now</a>
+          <a class="btn btn-secondary" href="https://tswgg.org/#/register?invitationCode=526655782645" target="_blank" rel="noopener noreferrer">Instant Register</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <section>
+        <h2>91 Club Guide</h2>
+        <p>Yeh page 91 Club se judi basic help ko seedhe aur simple tareeke se rakhne ke liye banaya gaya hai, taaki user ko har chhoti baat ke liye idhar-udhar na dekhna pade.</p>
+        <div class="warning-box">
+          <p><strong>Important Warning:</strong> Yeh platform sirf 18+ users ke liye hai. Hamesha control me rehkar use karo. Sirf utna hi risk lo jitna tum aaram se handle kar sako. Agar kabhi lage ki cheez limit se bahar ja rahi hai to break lo aur zarurat pade to help bhi lo.</p>
+        </div>
+      </section>
+      <section>
+        <h3>Quick Links</h3>
+        <ul class="quick-links"><li><a href="index.html">Home</a></li><li><a href="login.html">Login Guide</a></li><li><a href="register.html">Register Guide</a></li><li><a href="app.html">App Access</a></li><li><a href="invite-code.html">Invite Code</a></li><li><a href="faq.html">FAQs</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-conditions.html">Terms & Conditions</a></li><li><a href="responsible-gaming.html">Responsible Gaming</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul>
+      </section>
+      <section>
+        <h3>Legal</h3>
+        <ul class="legal-links">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+          <li><a href="responsible-gaming.html">Responsible Gaming</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="container">
+      <div class="footer-note">© 2026 91 Club Guide. 18+ Only | Play Responsibly | Stay Within Your Limits</div>
+    </div>
+  </footer>
+</body>
+</html>
